@@ -85,10 +85,20 @@
     padding: 2em;
   }
 
+  .overview{
+    grid-column: col-start / span 12;
+    grid-row: auto;
+  }
+
   .process{
+    grid-column: col-start / span 12;
+    grid-row: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    background-color: gray;
+    color: black;
+    gap: 10px;
+    padding: 5px;
   }
 
   .process_large{
@@ -99,8 +109,6 @@
   .process_medium{
     grid-column: auto / span 2;
     grid-row: auto;
-    padding: 0;
-    
   }
 
   .process_small{
@@ -209,10 +217,13 @@ figure{
   display: inline-block;  
   font-weight: 200;
   font-size: 0.6rem;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 20px;
+  margin: 0;
 }
 
 figure img {
