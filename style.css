@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box; 
+    font-family: roboto, sans-serif;
+    font-size: 12px;      
+  }
+
+  body{
+    margin: 0 auto;
+    background-color:white;
+   }
+
+  h1 {
+    font-weight: 400;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-weight:300;
+    font-size: 1.3rem;
+    color: black;
+  }
+
+  h3{
+    font-weight:200;
+    font-size: 1.2rem;
+  }
+
+  p{
+    font-size: 1rem;
+    color:black;
+  }
+ 
+
+  /* grid elements */
+  
+  .grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+    
+  }
+
+  .project-head {
+    background-color: white;
+    grid-column: col-start / span 12;  
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  
+  .main-head {
+    background-color: transparent;
+    grid-column: col-start / span 12;  
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  /*nested grid*/
+  .main-nav {
+    background-color:transparent;
+    grid-row: 1;
+    padding: 5px;
+    margin: 0;
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0 -5px 3px -3px rgb(158, 158, 158), 0 5px 3px -3px rgb(158, 158, 158);
+  }
+  
+  .header{
+    background-color: transparent;
+    grid-row: 2;    
+    min-height: 100px;  
+  }
+  
+  /* end nested grid */
+  
+  .content {
+    grid-column: col-start / span 12;
+    grid-row: 2;
+    padding: 2em;
+  }
+
+  .process{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+
+  .process_large{
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .process_medium{
+    grid-column: auto / span 2;
+    grid-row: auto;
+    padding: 0;
+    
+  }
+
+  .process_small{
+    grid-column: auto / span 1;
+    grid-row: auto;
+  }
+
+
+    
+  .main-footer {
+    grid-column: col-start  / span 12;
+    background-color:#6d7150;
+    min-height: 50px;
+    font-size: 0.5em;
+    text-align: center;
+  }
+  
+  /* end grid elements */
+  
+  /* navigation */
+  
+   
+  nav ul {
+    background-color: transparent;  
+    display: flex;
+    justify-content: stretch;
+    padding: 0;   
+  }
+  
+  nav ul li {
+    background-color: transparent; 
+    display: inline-block;
+    list-style: none;    
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  nav a {    
+    background-color: transparent;
+    color: rgb(202, 72, 72);
+    text-decoration: none;
+    transition: all 0.5s ease 0s;    
+    padding: 0.5em 1em ;
+    font-size: 15px;
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: rgb(202, 72, 72);
+  }
+    
+  /* end navigation */
+
+  /* projecttext */
+
+.titlearea{
+  padding-left: 50px;
+  padding-bottom: 20px;
+  width: 100%;
+  float: left;
+  clear: right;
+  overflow: hidden;
+  position:relative;
+}
+
+.headimg{
+  display: block;
+  max-height: 700px;
+  min-height: 480px;
+  float: right;
+  padding: 20px;
+
+}
+
+
+.project_title{
+  color:  rgb(202, 72, 72);
+  margin-bottom: 0;
+  font-size: 3em;
+  font-weight:500;  
+ }
+
+ .underline{
+  font-size: 1.5em;
+  color:#6d7150;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 1em;
+ }
+
+.sum{
+  grid-column: col-start / span 4;
+  grid-row: 2;
+  font-size: 1.3rem;
+  color: darkgrey;
+}
+
+.subtekst {
+  font-size: 1rem;
+  color: grey;
+}
+
+figure{
+  display: inline-block;  
+  font-weight: 200;
+  font-size: 0.6rem;
+  max-width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+figure img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+figcaption{
+  text-align: center;
+  background-color: transparent
+}
+
+
+.sum{
+  width: 60%;
+  font-size: 14px;
+  margin: 15px;
+}
+
+.taggies{
+  margin: 15px;
+  grid-column: 1.5 / span 3;
+  grid-row: 3;
+}
+
+.tags{
+  display: inline-block;
+  text-align: center;
+  padding: 5px 20px 5px 20px;
+  margin: 5px 15px 5px 0px;
+  border-radius: 5px;
+  background-color: rgb(202, 72, 72);
+  font-size: 15px;
+  font-weight: 300;
+  color:white;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+
+  /* end projecttext */
