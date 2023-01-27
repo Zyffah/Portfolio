@@ -195,7 +195,7 @@ figure{
   display: inline-block;  
   font-weight: 200;
   font-size: 0.6rem;
-  width: 100%;
+  width: fit-content;
   height: fit-content;
   border-radius: 5px;
   background-color: white;
@@ -206,7 +206,6 @@ figure{
 
 figure img {
   max-width: 100%;
-  vertical-align: top;
 }
 
 figcaption{
@@ -245,7 +244,7 @@ img{
   max-width: 60%;
   margin: auto;
   grid-column: 2;
-  
 }
+
 
   /* end projecttext */

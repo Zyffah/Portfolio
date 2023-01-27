@@ -1,69 +1,165 @@
-<div class="process">
-    <div class="process_large">
-        <h2 class="subtitle"></h2>
-        <p class="subtekst">
-            In dit project staat samenwerken en het samenvoegen van ideeën centraal. Alle groepsleden hebben individueel onderzoek gedaan naar wat de echte winkelervaring van een platenzaak inhoudt en dit weergegeven in een moodboard. Deze moodboards zijn vervolgens samengevoegd en hier is een muziekgenre aan gekoppeld. Door middel van ondersteunend onderzoek naar dit muziekgenre is er gezamenlijk een persona opgesteld welke een fractie van deze doelgroep weergeeft. 
-        </p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="p5.js"></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" value="">
+    <meta name="keywords" value="">
+    <title></title>
+</head>
+<body>
+    <div class="grid_wrapper">
+        <header class="project-head">      
+            <nav class="main-nav">            
+                <ul>
+                <li>logo</li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">projects</a></li>
+                </ul>
+          </nav>             
+        </header>
+        <main class="content">
+            <div class="overview">
+                <div class="titlearea">              
+                    <p class="project_title">Orakel</p>
+                    <p class="underline">The all-knowing app</p>
+                    <p class="sum">
+                        Digicampus werkt aan digitale publieke dienstverlening die voldoet aan de wensen van de samenleving. Dit doen zij door overheid, markt, wetenschap en samenleving samen te brengen. De laatste jaren is de druk op mantelzorgers sterk toegenomen, de verdubbeling van het aantal dementerenden is hiervan een grote oorzaak. 
+                        <br/>
+                        <br/>
+                        Het doel van deze opdracht is het ontwerpen van een digitaal hulpmiddel om deze druk te verlagen.
+                    </p>                      
+                </div>  
+                <img class="headfoto" src="/orakel/orakelmock.png" alt="mockupscherm"></img>
+                <div class="taggies">
+                    <span class="tags">benchmark</span><span class="tags">persona's</span><span class="tags">brainstorm</span><span class="tags">prototyping</span><span class="tags">moodboard</span>
+                    <span class="tags">schetsen</span><span class="tags">clusteren</span><span class="tags">tag</span><span class="tags">tag</span><span class="tags">tag</span><span class="tags">tag</span><span class="tags">tag</span><span class="tags">tag</span><span class="tags">tag</span><span class="tags">tag</span><span class="tags">tag</span>
+                </div>        
+            </div>
+            <div class="process">
+                <div class="process_title"><h2>process</h2></div>
+                <div class="process_text">
+                    <h3>Doelgroeponderzoek</h3>
+                    <p>Om uit te zoeken waar de knelpunten voor de doelgroep liggen zijn er interviews afgenomen. Hieruit bleek dat vooral het mentale aspect van mantelzorgen voor een dementerende zwaar is, niet zo zeer het fysieke. Meer dan de helft gaf ook aan dat tijd maken voor de zorg geen groot probleem is. Alle deelnemers zeggen de constante zorgen aan hun hoofd om de veiligheid en de interacties met de dementerende zelf het meest uitputtend te vinden. Het steeds opnieuw moeten vertellen of aanhoren van dezelfde verhalen, gebeld worden door de dementerende omdat zij iets kwijt zijn komen vaak voor en dit wordt als zeer vermoeiend ervaren. Omdat een van de missies van de organisatie is om de overheid een sterke datapartner te maken, zijn er ook vragen gesteld over hoe de doelgroep dit nu ervaart, of zij zich goed geïnformeerd voelen naar de mogelijke hulpmiddelen bijvoorbeeld. <br/><br/>
+                        Aan de hand van de resultaten van de interviews heb ik met mijn groep besloten dit probleem ook van de andere kant te bekijken: een hulpmiddel voor mensen met dementie, die indirect zorgt voor minder druk op de mantelzorger. Vanuit deze gedachte is verder onderzoek gedaan naar mensen met dementie, hoe zij met technologie omgaan en richtlijnen voor het ontwerp. Dementie heeft namelijk niet alleen invloed op het geheugen, maar ook op bijvoorbeeld het zicht en de motoriek.
+                        Een belangrijk aspect uit dit onderzoek is dat een dementerend persoon nu eenmaal afhankelijk is van anderen, een mogelijkheid om de mantelzorger te ontlasten is om de zorg te verspreiden over meerdere mensen.<br/><br/>
+                        Op basis van het doelgroeponderzoek zijn er user-stories en requirements opgesteld. Vanuit deze punten zijn er twee persona’s gecreëerd, een voor de mantelzorger en een voor de dementerende. 
+                        </p>
+                </div>
+                <div class="process_text">
+                    <h3>Concepten genereren</h3>
+                    <p>De belangrijkste probleempunten zijn overgezet in een Miroboard en vervolgens met de hele groep geclusterd, deze clusters bieden de basis voor een brainstorm. Uit deze brainstorm zijn drie verschillende concepten gekomen. Deze concepten zijn gepresenteerd aan onze klas voor een peer-review en vervolgens aan de docent en opdrachtgevers voor een expert-review. 
+                    </p>
+                </div>
+                <div class="process_img">
+                    <figure>
+                        <p><img src="/orakel/man1.png"
+                          alt="individueel moodboard">
+                        <figcaption>Individueel moodboard</figcaption>
+                    </figure>
+                    <figure>
+                        <p><img src="/orakel/man2.png"
+                          alt="individueel moodboard">
+                        <figcaption>Samengevoegd moodboard</figcaption>
+                    </figure> 
+                    <figure>
+                        <p><img src="/orakel/man3.png"
+                          alt="individueel moodboard">
+                        <figcaption>Opgesteld persona</figcaption>
+                    </figure>                     
+                </div>
+                <div class="process_img">
+                    <figure>
+                        <p><img src="/orakel/man4.png"
+                          alt="individueel moodboard">
+                        <figcaption>Individueel moodboard</figcaption>
+                    </figure>
+                    <figure>
+                        <p><img src="/orakel/man5.png"
+                          alt="individueel moodboard">
+                        <figcaption>Samengevoegd moodboard</figcaption>
+                    </figure> 
+                    <figure>
+                        <p><img src="/orakel/man6.png"
+                          alt="individueel moodboard">
+                        <figcaption>Opgesteld persona</figcaption>
+                    </figure>                     
+                </div>
+                <div class="process_img">
+                    <figure>
+                        <p><img src="/orakel/man7.png"
+                          alt="individueel moodboard">
+                        <figcaption>Individueel moodboard</figcaption>
+                    </figure>
+                    <figure>
+                        <p><img src="/orakel/man8.png"
+                          alt="individueel moodboard">
+                        <figcaption>Samengevoegd moodboard</figcaption>
+                    </figure> 
+                   
+                </div>
+                <div class="process_text">
+                    <p>Ik heb het concept van de gedeelde agenda gepresenteerd met behulp van mijn wireframes met annotaties:
+                    </p>
+                </div>
+                <div class="process_img">
+                    <figure>
+                        <img src="/orakel/Annotaties1.png"
+                          alt="individueel moodboard">                        
+                    </figure>
+                    <figure>
+                        <img src="/orakel/Annotaties2.png"
+                          alt="individueel moodboard">                        
+                    </figure> 
+                    <figure>
+                        <img src="/orakel/Annotaties3.png"
+                          alt="individueel moodboard">                        
+                    </figure>                    
+                </div>
+                <div class="process_text">
+                    <h3>Orakel</h3>
+                    <p>Orakel is een app voor iedereen die betrokken is bij de zorg voor de dementerende. Hiermee wordt bedoeld dat het niet alleen voor de mantelzorger is, maar ook voor de dementerende zelf en zelfs voor andere familieleden en buurtbewoners. De mantelzorger is de beheerder en kan dingen voor de rest instellen. <br/><br/>
+                        De app lost de twee grootste problemen op: de terugkerende vragen of verhalen en de constante onrust voor ongevallen. De mantelzorger kan de terugkerende vragen met antwoord invoeren in de app als de app op de tablet van de dementerende deze vraag hoort geeft het automatisch antwoord, zo vaak als nodig is. Deze antwoorden zijn ook ten alle tijden terug te lezen in de app. Er kan ook zelf of samen met de dementerende verhalen ingevoerd worden die niet vergeten mogen worden, zodat de dementerende daar niet bang voor hoeft te zijn en deze herinnering op elk moment kan herbeleven.<br/><br/>
+                        Het andere deel van de app bestaat uit een altijd in beeld aanwezige hulpknop. De mantelzorger kan zelf een volgorde invullen van personen die gebeld kunnen worden in geval van nood. De app gaat die lijst van bovenaf een voor een af tot er iemand is die tijd heeft om te hulp te schieten. Hierdoor staat de mantelzorger er niet meer alleen voor.<br/><br/>
+                        Het concept is eerst uitgewerkt in wireframes met annotaties en vervolgens is er een mockup gemaakt. Het ontwerp van de applicatie is gebaseerd op onderzochte richtlijnen voor het ontwerpen voor mensen met dementie. Ik heb gezorgd voor het logo en de bijbehorende styleguides:
 
-    <div class="process_medium">
-        <figure>
-            <p><img src="/concerto/Julia_Moodboard_UX1.png"
-              alt="individueel moodboard">
-            <figcaption>Individueel moodboard</figcaption>
-        </figure>
+                        </p>                    
+                </div>
+                <div class="process_img">
+                    <figure>
+                        <img src="/orakel/SG1.png"
+                          alt="individueel moodboard">                        
+                    </figure>
+                    <figure>
+                        <img src="/orakel/SG2.png"
+                          alt="individueel moodboard">                        
+                    </figure>               
+                </div>
+                <div class="process_result">
+                    <h3>Resultaat:</h3>
+                    <p>Het ontwerp is verder uitgewerkt naar een HiFi prototype en getest met de doelgroep door middel van usability testing. Tijdens de test is er gebruikgemaakt van het think aloud protocol en een aantal korte interviewvragen achteraf. De verzamelde verbeterpunten zijn vervolgens doorgevoerd in het ontwerp.
+                    </p>
+                    <a href="https://xd.adobe.com/view/6c644b88-4c02-4ba7-834f-aa28b148c9a4-3937/">HiFi Prototype</a>                  
+                </div>  
+                <div class="process_img">
+                    <figure>
+                        <img src="/orakel/scherm.png"
+                          alt="individueel moodboard">                        
+                    </figure>
+                    <figure>
+                        <img src="/orakel/scherm2.png"
+                          alt="individueel moodboard">                        
+                    </figure>               
+                </div>              
+            </div>
+        </main>
+        <div class="main-footer">
+            <p>julia de vries 2023</p>
+        </div>
     </div>
-    <div class="process_medium">
-        <figure>
-            <p><img src="/concerto/Moodboard Classic Rock luisteraar (V1).jpg"
-              alt="individueel moodboard">
-            <figcaption>Samengevoegd moodboard</figcaption>
-        </figure>
-    </div>
-    <div class="process_medium">
-        <figure>
-            <p><img src="/concerto/Persona Classic Rock luisteraar (V1).jpg"
-              alt="individueel moodboard">
-            <figcaption>Opgesteld persona</figcaption>
-        </figure>
-    </div>
-    <div class="process_large">
-        <h2 class="subtitle"></h2>
-        <p class="subtekst">
-            Aan de hand van het eerdere deskresearch, nu met definitief persona, heeft iedereen eerst weer individueel schetsen gemaakt van zijn/haar ideeën voor het herontwerp van de homepagina. De schetsen zijn vervolgens geëvalueerd binnen de groep en uitgewerkt tot eindontwerp.
-        </p>
-    </div>
-    <div class="process_large">
-        <h2 class="subtitle"></h2>
-        <p class="subtekst">
-            <h2>Onderzoek Benchmark</h2>                
-            Individueel uitgevoerd. Er is genoteerd welke elementen uit de theorie terugkomen op de website en welke aspecten goede inspiratiebronnen zijn voor het herontwerp. 
-            
-            <h3>Creatieve sessie</h3>
-            Er zijn in dit deel van het project meerdere stappen gezet en er zijn verschillende iteraties gedaan. Er is begonnen met een brainstorm sessie, waarin er drie mental notes zijn gekozen, waarbij ongeveer 30 ideeën per note bedacht zijn. De gekozen mental notes zijn: Trigger, Commitment & Consistency en Anchoring & Adjustment. Vervolgens werden de beste ideeën (juicy bits) gescheiden van de rest. Deze zijn gebruikt in de schetsen. <hr/>
-            Daarna zijn de schetsen besproken en zijn er drie interpretaties van een gezamenlijk idee uitgewerkt. Vervolgens is er feedback gevraagd en op basis hiervan is er een nieuwe indeling gemaakt, die de beste elementen van de drie uitwerkingen combineert. 
-            Ieder groepslid heeft een eigen concept uitgewerkt tot een storyboard. Het laatste idee is uitgewerkt tot een storyboard: een idee was dat de beste elementen van alle andere ideeën en de gekregen feedback gebruikte om een beter concept te creëren. Omdat we het niet helemaal eens werden, hebben we allemaal ook individueel een LoFi prototype uitgewerkt.
-        </p>
-    </div>
-    <div class="process_medium">
-        <figure>
-            <p><img src="/concerto/Julia_Moodboard_UX1.png"
-              alt="individueel moodboard">
-            <figcaption>Individueel moodboard</figcaption>
-        </figure>
-    </div>
-    <div class="process_large">
-        <h2 class="subtitle"></h2>
-        <p class="subtekst">
-            Ieder groepslid heeft een eigen concept uitgewerkt tot een storyboard. Het laatste idee is uitgewerkt tot een storyboard: een idee was dat de beste elementen van alle andere ideeën en de gekregen feedback gebruikte om een beter concept te creëren. Omdat we het niet helemaal eens werden, hebben we allemaal ook individueel een LoFi prototype uitgewerkt. 
-        </p>
-    </div>
-    <div class="process_large">
-        <h2 class="subtitle"></h2>
-        <p class="subtekst">
-            Na de individuele uitwerkingen is er een nieuw ontwerp gemaakt. Hierbij zijn er tussenstappen genomen, maar er zijn alleen verschillende indelingen gemaakt en er zijn in de tussenstappen alleen dingen verschoven.
-            <a href="https://xd.adobe.com/view/a8228583-26ca-4aa4-aa4c-bde86057be8c-fd71/">Homepagina</a>
-            <a href="https://xd.adobe.com/view/f4ad4092-87e5-4f1a-bf1b-3fc01966733f-a1fe/">Detailpagina</a> 
-        </p>
-    </div>
-</div>
+    <script src=""></script>
+</body>
+</html>
