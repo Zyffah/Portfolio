@@ -191,12 +191,19 @@
   .main-footer {
     grid-column: col-start  / span 12;
     background-color:rgb(202, 72, 72);
-    min-height: 50px;
-    font-size: 0.5em;
+    color: white;
     padding: 20px;
     text-align: center;
   }
   
+  .main-footer p{
+
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+  }
+
+
   /* end grid elements */
   
   /* navigation */
